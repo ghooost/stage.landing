@@ -1,0 +1,13 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "support.js",
+  "scripts": {
+    "watch":"sass ./src:./dst --watch --scss --sourcemap=none",
+    "build":"sass ./src/styles.scss:./dst/styles.css --scss --style=compressed --sourcemap=none",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
