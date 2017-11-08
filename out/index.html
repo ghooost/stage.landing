@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing</title>
+<style>
+body{background-color:#2d3a50;margin:0;padding:0}.wrapper{min-height:100vh;width:700px;margin:0 auto;background-color:#ffffff;overflow-x:hidden}@media screen and (max-width: 700px){.wrapper{width:100%}}.iblock{display:block;background-size:contain;background-position:center center;background-repeat:no-repeat}.top{height:500px;background:url(http://stage-musical.ru/ghost_landing/img/top.jpg) center center no-repeat;background-size:cover}@media screen and (max-width: 700px){.top{height:71vw}}.scroll{position:relative;height:440px;overflow:hidden;background-color:#010f20;color:#ffffff}@media screen and (max-width: 700px){.scroll{height:62vw}}.scroll .container{position:absolute;top:0;left:0;height:100%;width:100%;transition:left 0.5s}.scroll[data-touched] .container{transition:none}.scroll .page{display:block;width:100%;height:100%;vertical-align:top;background:top center no-repeat;background-size:cover;position:absolute;top:0}.scroll .controls{display:block;position:absolute;left:50%;bottom:30px}@media screen and (max-width: 500px){.scroll .controls{bottom:10px}}.scroll .control{display:block;position:absolute;width:40px;height:40px;bottom:0px;opacity:1;cursor:pointer;transition:background-color 0.4s}.scroll .control:hover{opacity:1;background-color:#000710}.scroll .control.next{background-image:url(http://stage-musical.ru/ghost_landing/img/right.png);left:2px;z-index:2}.scroll .control.prev{right:2px;background-image:url(http://stage-musical.ru/ghost_landing/img/left.png);z-index:2}.scroll:after{content:'';display:block;position:absolute;z-index:1;background:#000000;opacity:0.4;bottom:0;left:0;right:0;height:100px}@media screen and (max-width: 500px){.scroll:after{height:60px}}.scroll .cite1{left:0%;background-image:url(http://stage-musical.ru/ghost_landing/img/quote1.jpg)}.scroll .cite2{left:100%;background-image:url(http://stage-musical.ru/ghost_landing/img/quote2.jpg)}.scroll .cite3{left:200%;background-image:url(http://stage-musical.ru/ghost_landing/img/quote3.jpg)}.scroll .pic1{left:0%;background-image:url(http://stage-musical.ru/ghost_landing/img/pic01.jpg)}.scroll .pic2{left:100%;background-image:url(http://stage-musical.ru/ghost_landing/img/pic02.jpg)}.scroll .pic3{left:200%;background-image:url(http://stage-musical.ru/ghost_landing/img/pic03.jpg)}.scroll .pic4{left:300%;background-image:url(http://stage-musical.ru/ghost_landing/img/pic04.jpg)}.scroll .pic5{left:400%;background-image:url(http://stage-musical.ru/ghost_landing/img/pic05.jpg)}.scroll .pic6{left:500%;background-image:url(http://stage-musical.ru/ghost_landing/img/pic06.jpg)}h2{font-size:18px;font-family:"Verdana";color:#8d6f1e;font-weight:bold;letter-spacing:1px;text-transform:uppercase;line-height:1.072;text-align:left}h1{font-size:24px;font-family:"Verdana";color:#b90009;font-weight:bold;text-transform:uppercase;line-height:0.765;text-align:center}.colblock{margin-right:40px;margin-left:40px}.colblock *:first-child{margin-top:0}.colblock *:last-child{margin-bottom:0}@media screen and (max-width: 700px){.colblock{margin-left:20px;margin-right:20px}}.colblock .col1{width:155px;float:left;padding:60px 0;box-sizing:border-box;font-size:12px;font-family:Verdana;color:#404c5f;line-height:1.333;text-align:center}@media screen and (max-width: 700px){.colblock .col1{float:none;margin-left:auto;margin-right:auto;padding-bottom:0}}.colblock .col2{width:435px;float:right;box-sizing:border-box;padding:60px 0;font-size:14px;font-family:Verdana;color:#868c96;line-height:1.333;text-align:left}@media screen and (max-width: 700px){.colblock .col2{width:auto;float:none}}.colblock:after{display:block;height:0;float:none;clear:both;content:''}.ytblock{margin-right:40px;margin-left:40px;height:348px}@media screen and (max-width: 700px){.ytblock{margin-left:20px;margin-right:20px}}@media screen and (max-width: 700px){.ytblock{margin-left:0px;margin-right:0px;height:56vw}}.ytblock iframe{border:none;margin:0;display:block}@media screen and (max-width: 700px){.ytblock iframe{width:100%;height:56vw}}.actblock{background-color:#010f20}.actblock *:first-child{margin-top:0}.actblock *:last-child{margin-bottom:0}.actblock h2{text-align:center}.actblock .ungle{height:62px;background:url(http://stage-musical.ru/ghost_landing/img/ungle.png) top center no-repeat}.actblock .content{padding:60px 0}.actblock .actors{background:url(http://stage-musical.ru/ghost_landing/img/actors.png) center center no-repeat;height:153px;margin:30px 0}@media screen and (max-width: 700px){.actblock .actors{width:400px;height:400px;margin:30px auto;background-image:url(http://stage-musical.ru/ghost_landing/img/small.png);background-size:contain}}@media screen and (max-width: 400px){.actblock .actors{width:100%;height:100vw}}.actblock .text{margin-right:70px;margin-left:70px;font-size:14px;font-family:Verdana;color:#868c96;line-height:1.333;color:#ffffff;line-height:1.5}@media screen and (max-width: 700px){.actblock .text{margin-left:20px;margin-right:20px}}.linkblock{padding:60px 0;background:url(http://stage-musical.ru/ghost_landing/img/fon.jpg) center center no-repeat}.linkblock *:first-child{margin-top:0}.linkblock *:last-child{margin-bottom:0}@media screen and (max-width: 700px){.linkblock h1{line-height:1.2em}}.linkblock .text{margin-right:70px;margin-left:70px;font-size:14px;font-family:Verdana;color:#868c96;line-height:1.333;text-align:center}@media screen and (max-width: 700px){.linkblock .text{margin-left:20px;margin-right:20px}}.linkblock .text .intro{font-size:18px;font-family:"Verdana";color:#404c5f;line-height:1.2;text-align:center}.linkblock .text .intro2{color:#404c5f}.linkblock .buttons{text-align:center}.linkblock .buttons a{display:inline-block;background-color:#b90009;color:#fff;padding:20px;letter-spacing:1px;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background-color 0.3s}.linkblock .buttons a:hover{background-color:#c80012}.rules a{cursor:pointer;position:relative;color:#868c96;text-decoration:none}@media screen and (max-width: 400px){.rules a{text-decoration:underline}}.rules a:after{position:absolute;bottom:0;height:1px;left:0;right:0;content:'';display:block;background-color:#b90009}@media screen and (max-width: 400px){.rules a:after{display:none}}.rules .opened{position:relative;height:0px;overflow:hidden;transition:height 0.5s}.rules .opened>div{padding-bottom:1em}.rules .opened li{text-align:left;margin-bottom:0.5em}
+</style>
+<script>
+var Scroll=function(){function b(h){for(var i=0,g=h.length;i<g;i++){h[i].addEventListener("touchmove",a,false);h[i].addEventListener("touchend",f,false)}}function a(h){var j=this.querySelector(".container");var g=h.touches[0].screenX;if(!this.touchData){this.setAttribute("data-touched",1);this.touchData={x1:g,objx:j.offsetLeft}}var i=this.touchData;i.x2=g;j.style.left=(i.x2-i.x1+i.objx)+"px"}function f(g){var h=this.touchData;this.removeAttribute("data-touched");if(h&&Math.abs(h.x1-h.x2)>50){if(h.x2>h.x1){d(this)}else{c(this)}}else{var i=this.querySelector(".container");i.style.left=h.objx+"px"}this.touchData=null}function e(p){var l=p;while(l){if(l.className=="scroll"){break}l=l.parentNode}if(!l){return null}var j={obj:l,container:l.querySelector(".container"),curPage:l.attributes["data-page"]?parseInt(l.attributes["data-page"].value):0};var i=l.querySelectorAll(".container > .page");var h=i[0].offsetLeft;var n=i[0].offsetLeft;for(var k=0,g=i.length;k<g;k++){if(i[k].offsetLeft<=h){j.firstPage=i[k];h=i[k].offsetLeft}if(i[k].offsetLeft>=n){j.lastPage=i[k];n=i[k].offsetLeft}}return j}function d(i){var h=e(i);h.curPage++;h.obj.setAttribute("data-page",h.curPage);var j=100*h.curPage;var g=h.curPage*h.obj.offsetWidth;h.container.style.left=j+"%";if(h.firstPage.offsetLeft>-g){h.container.insertBefore(h.lastPage,h.firstPage);h.lastPage.style.left=-j+"%"}}function c(i){var h=e(i);h.curPage--;h.obj.setAttribute("data-page",h.curPage);var j=100*h.curPage;var g=h.curPage*h.obj.offsetWidth;h.container.style.left=j+"%";if(h.lastPage.offsetLeft<-g){h.container.appendChild(h.firstPage);h.firstPage.style.left=-j+"%"}}return{prev:d,next:c,addGestures:b}}();var Switcher=function(){function b(d){var c=d.parentNode;while(c){if(c.tagName=="div"||c.tagName=="DIV"){break}c=c.parentNode}return{obj:c,opened:c.querySelector(".opened"),content:c.querySelector(".opened > div")}}function a(d){var c=b(d);if(c.obj.attributes["data-opened"]){c.opened.style.height="0px";c.obj.removeAttribute("data-opened")}else{c.opened.style.height=c.content.offsetHeight+"px";c.obj.setAttribute("data-opened",1)}}return{change:a}}();
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="iblock top"></div>
+  <div class="scroll">
+    <div class="container">
+      <div class="page cite1"></div>
+      <div class="page cite2"></div>
+      <div class="page cite3"></div>
+    </div>
+    <div class="controls">
+      <a class="control prev" onClick="Scroll.prev(this)"></a>
+      <a class="control next" onClick="Scroll.next(this)"></a>
+    </div>
+  </div>
+  <div class="colblock">
+    <div class="col1">
+      <img src="img/oscar.png">
+      <p>Оскар за лучший оригинальный сценарий — Брюс Джоэл Рубин</p>
+    </div>
+    <div class="col2">
+      <h2>Оскароносный сюжет</h2>
+      <p>Мюзикл создан по мотивам легендарного одноимённого фильма 1990 года с Патриком Суэйзи, Деми Мур и Вупи Голдберг в главных ролях.</p>
+      <p>Зрители мюзикла окажутся в центре современного Нью-Йорка, где разворачивается удивительная история любви Сэма и Молли: долгожданный переезд в новую квартиру, приятные семейные хлопоты, грандиозные планы на&nbsp;будущее. Но в один миг всё круто меняется, и&nbsp;праздничный блеск большого города меркнет перед невероятными испытаниями, которые обрушиваются на&nbsp;героев…</p>
+    </div>
+  </div>
+  <div class="ytblock">
+    <iframe width="620" height="348" src="https://www.youtube.com/embed/nSM97MlkUHg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="colblock">
+    <div class="col1">
+      <img src="img/guiness.png">
+      <p>Unchained Melody занесена в Книгу рекордов Гиннеса как песня с наибольшим числом каверов</p>
+    </div>
+    <div class="col2">
+      <h2>Культовые музыкальные хиты</h2>
+      <p>Потрясающая живая музыка в исполнении оркестра и&nbsp;артистов. Легендарные композиции, созданные всемирно известными музыкантами — участником группы Eurythmics Дейвом Стюартом и композитором Гленом Баллардом, автором песен Майкла Джексона, Aerosmith и&nbsp;Аланис Мориссетт.</p>
+      <p>В спектакле звучит один из главных музыкальных хитов ХХ века — композиция Unchained Melody.</p>
+    </div>
+  </div>
+  <div class="scroll">
+    <div class="container">
+      <div class="page pic1"></div>
+      <div class="page pic2"></div>
+      <div class="page pic3"></div>
+      <div class="page pic4"></div>
+      <div class="page pic5"></div>
+      <div class="page pic6"></div>
+    </div>
+    <div class="controls">
+      <a class="control prev" onClick="Scroll.prev(this)"></a>
+      <a class="control next" onClick="Scroll.next(this)"></a>
+    </div>
+  </div>
+  <div class="colblock">
+    <div class="col1">
+      <img src="img/led.png">
+      <p>Экран форматом 8:13 м состоит из 240 модулей 64x64 см каждый, вес — почти 4 тонны</p>
+    </div>
+    <div class="col2">
+      <h2>Уникальные спецэффекты</h2>
+      <p>Иллюзия левитации и присутствия между двумя мирами, эффект slow motion и грандиозный видеодизайн сценического пространства от компании Raketamedia, оформлявшей конкурс «Евровидение» и церемонию открытия зимних Олимпийских игр в Сочи.</p>
+      <p>На сцене установлен огромный LED экран, спроектированный специально для мюзикла.</p>
+    </div>
+  </div>
+  <div class="actblock">
+    <div class="ungle"></div>
+    <div class="content">
+      <h2>Звезды на сцене</h2>
+      <div class="actors"></div>
+      <div class="text">
+        <p>Главные роли Молли и Сэма исполняют Галя Безрук, актриса театра и&nbsp;кино, финалистка конкурса «Новая волна-2016», и Павел Лёвкин, знакомый зрителям по ролям в спектаклях МХТ им. А.П. Чехова и&nbsp;мюзиклов «Красавица и Чудовище», «Золушка» и других. В роли Карла — Станислав Беляев, актёр театра и кино («Экипаж», «Бесы», «Людмила Гурченко»). Яркую комедийную роль мошенницы-медиума Оды Мэй блестяще играет актриса театра «Сатирикон», заслуженная артистка России Марина Иванова.</p>
+      </div>
+    </div>
+  </div>
+  <div class="linkblock">
+    <div class="text">
+      <h1>Подарите впечатления!</h1>
+      <p class="intro">Вы можете поделиться своими впечатлениями с друзьями, близкими и коллегами с помощью электронного Подарочного сертификата на посещение мюзикла «Привидение» в театре МДМ!</p>
+      <p class="intro">Подарочный сертификат — это настоящий сюрприз, ведь вам не нужно заранее согласовывать дату сеанса с&nbsp;получателем: он сможет сам выбрать любой удобный день для просмотра мюзикла.</p>
+      <p class="intro">А ещё это оригинальный и желанный подарок на любой праздник!</p>
+      <div class="rules">
+        <p><a onClick="Switcher.change(this)">Правила использования сертификата</a>
+        <div class="opened">
+          <div>
+            <ul>
+              <li>Оплатить заказ билетов на мюзикл «Привидение» сертификатом можно только на сайте <a href="https://musical-ghost.ru">musical-ghost.ru</a></li>
+              <li>Если сумма заказа больше номинала сертификата, возможна доплата банковской картой.</li>
+              <li>Если сумма заказа меньше номинала сертификата, остаток остаётся на сертификате.</li>
+              <li>Сертификат не подлежит возврату.</li>
+              <li>Сертификат не подлежит восстановлению в случае утраты.</li>
+              <li>Сертификаты с истекшим сроком действия к оплате не принимаются.</li>
+              <li>Срок действия сертификата начинается со дня его покупки и&nbsp;заканчивается 31.05.2018 г.</li>
+              <li>Сертификат можно использовать неоднократно до окончания срока его действия.</li>
+              <li>Обмен сертификата на билеты на мюзикл «Привидение» производится с учётом наличия доступных мест на выбранную вами дату.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <dov class="buttons">
+        <a href="#">Купить сертификат</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+if(Scroll){
+  Scroll.addGestures(document.querySelectorAll(".scroll"));
+}
+</script>
+</body>
+</html>

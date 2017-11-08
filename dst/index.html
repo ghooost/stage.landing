@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Landing</title>
 <link href="styles.css" type="text/css" rel="stylesheet">
 <script src="support.js"></script>
@@ -15,8 +16,10 @@
       <div class="page cite2"></div>
       <div class="page cite3"></div>
     </div>
-    <a class="control prev" onClick="Scroll.prev(this)"></a>
-    <a class="control next" onClick="Scroll.next(this)"></a>
+    <div class="controls">
+      <a class="control prev" onClick="Scroll.prev(this)"></a>
+      <a class="control next" onClick="Scroll.next(this)"></a>
+    </div>
   </div>
   <div class="colblock">
     <div class="col1">
@@ -52,8 +55,10 @@
       <div class="page pic5"></div>
       <div class="page pic6"></div>
     </div>
-    <a class="control prev" onClick="Scroll.prev(this)"></a>
-    <a class="control next" onClick="Scroll.next(this)"></a>
+    <div class="controls">
+      <a class="control prev" onClick="Scroll.prev(this)"></a>
+      <a class="control next" onClick="Scroll.next(this)"></a>
+    </div>
   </div>
   <div class="colblock">
     <div class="col1">
@@ -106,5 +111,10 @@
     </div>
   </div>
 </div>
+<script>
+if(Scroll){
+  Scroll.addGestures(document.querySelectorAll(".scroll"));
+}
+</script>
 </body>
 </html>

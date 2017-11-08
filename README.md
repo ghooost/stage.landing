@@ -1,6 +1,6 @@
 Лендинг мюзикла Привидение/Stage Ent. для Rambler
 
-нереспонсивный, 700px width - требование Rambler
+респонсивный, 700px width max - требование Rambler
 
 sass, html, js
 
